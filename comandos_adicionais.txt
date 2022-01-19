@@ -1,0 +1,7 @@
+ls . > bg.txt = Criar listagem de arquivos em txt
+python3 mergevec.py -v positivas/vec/ -o vetor_final.vec = Juntar os vec *Antes é necessario copia-los para pasta vec
+
+* Criar pasta classificador dentro das negativas
+* E dentro da pasta negativas executar o codigo de trainamento
+
+opencv_traincascade -data classificador -vec ../vetor_final.vec -bg bg.txt -numPos 4500 -numNeg 3200 -numStages 15 -w 24 -h 24 -precalcValBufSize 2048 -precalcIdxBufSize 2048
